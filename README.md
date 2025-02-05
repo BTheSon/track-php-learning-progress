@@ -171,7 +171,11 @@
 
     }
     ```
-4. 
+### Biến toàn cục
+    - `$GLOBAL[]`
+    - `$_POST`
+    - `$_GET`
+    - `$_REQUEST`
 ### F. Những hàm thông dụng
 - `isset($v)` kiểu tra biến `&a` có tồn tại không
 - `var_dump($var)` hiển thị thông tin chi tiết về biến `$var`
@@ -179,4 +183,6 @@
 - `print_r($variable)` : hiển thị raw data của biến `$variable` (có thể dùng hiển thị raw data của một mảng)
 - `$arr = explode($delimiter, $string);` : hàm tách chuỗi `$string`  thành mảng `arr` cách nhau bằng `$delimiter`
 - `$s = implode($delimiter, $arr);` : ngược lại với hàm `explode()`
-- `header("Location = {$file_name}")` : khi gọi hàm này thì trang php hiện tại sẽ chuyển sao tran php có tên `$file_name`
+- `header("Location = {$file_name}")` : khi gọi hàm này thì trang php hiện tại sẽ chuyển sao tran php có tên `$file_name`, nếu có lỗi trong file `$filename` thì nó vẫn chạy những đoạn code bên dưới
+- `include $filename` : gộp đoạn code trong file tên `$filename` vào vị trí hàm được gọi
+- `require $filename` : tương tự `include` nhưng nếu file tên `$filename` có lỗi thì đoạn code từ lúc gọi hàm trở về sau sẽ không chạy nữa

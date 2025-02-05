@@ -1,3 +1,6 @@
+<pre>
 <?php
-    echo "\non file test";
+   print_r($_POST);
 ?>
+
+</pre>
