@@ -171,6 +171,8 @@
 
     }
     ```
+### 6 Làm việc với form
+
 ### Biến toàn cục
     - `$GLOBAL[]`
     - `$_POST`
@@ -186,3 +188,4 @@
 - `header("Location = {$file_name}")` : khi gọi hàm này thì trang php hiện tại sẽ chuyển sao tran php có tên `$file_name`, nếu có lỗi trong file `$filename` thì nó vẫn chạy những đoạn code bên dưới
 - `include $filename` : gộp đoạn code trong file tên `$filename` vào vị trí hàm được gọi
 - `require $filename` : tương tự `include` nhưng nếu file tên `$filename` có lỗi thì đoạn code từ lúc gọi hàm trở về sau sẽ không chạy nữa
+- `preg_match($regex, $str)` : kiểm tra chuỗi `$str` có thỏa mản biểu thức chính quy `$regex`

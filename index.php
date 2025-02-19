@@ -1,9 +1,28 @@
-
-<form action="test.php" method = "post" name = "form" style = "display: flex; flex-direction: column;">
-    <label>user name: </label>
-    <input type="text" name = "userName">
-    <label>pass word: </label>
-    <input type="password" name = "password">
-    <input type = "submit" value = "gửi">
-    
+<form action="" method = "post">
+    <table>
+        <tr>
+            <th><label>Đăng nhập</label></th>
+        </tr>
+        <tr>
+            <td><input type="text" name="username"placeholder="Tên đăng nhập"></td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" placeholder="Mật khẩu"></td>
+        </tr>
+        <tr>
+            <td>
+                <input id = "checkbox" type="checkbox" name="checkbox">
+                
+                    <lable for = "checkbox">Nhớ mật khẩu</lable>
+                
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Đăng nhập" name="submit"></td>
+        </tr>
+    </table>
 </form>
+
+<?php
+
+?>

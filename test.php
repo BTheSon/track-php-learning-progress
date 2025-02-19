@@ -1,6 +1,6 @@
 <pre>
 <?php
-   print_r($_POST);
+   echo "hell"
 ?>
 
 </pre>
